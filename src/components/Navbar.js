@@ -16,9 +16,9 @@ function Navbar({ open_side_nav }) {
                 <a href='#resume'>
                     <span className='mx-4 nav-item'>Resume</span>
                 </a>
-                <a href='#testimonial'>
+                {/* <a href='#testimonial'>
                     <span className='mx-4 nav-item'>Testimonial</span>
-                </a>
+                </a> */}
                 <a href='#contact'>
                     <span className='mx-4 nav-item'>Contact</span>
                 </a>

@@ -19,7 +19,7 @@ function App() {
       <HeroSection />
       <About />
       <Resume />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
     </div>
   );
