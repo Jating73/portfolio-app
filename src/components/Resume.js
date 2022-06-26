@@ -185,6 +185,37 @@ function Resume() {
         },
     ];
 
+    const volunteer_details = [
+        {
+            "id": 1,
+            "volunteering_job": "DIGITAL MEDIA MARKETING INTERN",
+            "organisation": "Hamari Pahchan NGO",
+            "start_month": "June",
+            "start_year": "2020",
+            "end_month": "July",
+            "end_year": "2020",
+            "description": [
+                "Creating Posters For NGO.",
+                "Help in Raising Funds for the NGO.",
+                "Creating Social Awareness Regarding Illiterate Women"
+            ]
+        },
+        {
+            "id": 2,
+            "volunteering_job": "JOINT CORE",
+            "organisation": "CULFEST-CULTURAL FEST OF NIT JAMSHEDPUR",
+            "start_month": "August",
+            "start_year": "2018",
+            "end_month": "July",
+            "end_year": "2019",
+            "description": [
+                "Responible for managing different Fests and Activities.",
+                "Team Management",
+                "Guiding Juniors to work properly"
+            ]
+        }
+    ];
+
     const [education, setEducation] = useState(true);
     const [work, setWork] = useState(false);
     const [projects, setProjects] = useState(false);
