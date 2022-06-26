@@ -3,28 +3,29 @@ import Education from './resume/Education';
 import Programming from './resume/Programming';
 import Projects from './resume/Projects';
 import Work from './resume/Work';
+import Volunteer from './resume/Volunteer';
 
 function Resume() {
 
     const education_details = [
         {
             "id": 1,
-            "university_name":"National Insititute of Technology, Jamshedpur",
-            "unviversity_degree":"Master of Computer Applications",
+            "university_name": "National Insititute of Technology, Jamshedpur",
+            "unviversity_degree": "Master of Computer Applications",
             "start_year": 2018,
             "end_year": 2021
         },
         {
             "id": 2,
-            "university_name":"Panjab Univeristy, Chandigarh",
-            "unviversity_degree":"Bachelor of Computer Applications",
+            "university_name": "Panjab Univeristy, Chandigarh",
+            "unviversity_degree": "Bachelor of Computer Applications",
             "start_year": 2015,
             "end_year": 2018
         },
         {
             "id": 3,
-            "university_name":"Central Board of Secondary Education.",
-            "unviversity_degree":"High School Education",
+            "university_name": "Central Board of Secondary Education.",
+            "unviversity_degree": "High School Education",
             "start_year": 2014,
             "end_year": 2015
         }
@@ -37,7 +38,7 @@ function Resume() {
             "position": "Associate Software Engineer",
             "start_month": "July",
             "start_year": "2021",
-            "end_month":"",
+            "end_month": "",
             "end_year": "Present",
             "descriptions": [
                 "Develop and maintain Backend for apps and web panels",
@@ -57,7 +58,7 @@ function Resume() {
             "position": "Software Engineer Intern",
             "start_month": "January",
             "start_year": "2021",
-            "end_month":"June",
+            "end_month": "June",
             "end_year": "2021",
             "descriptions": [
                 "Develop and maintain Backend for apps and web panels",
@@ -77,7 +78,7 @@ function Resume() {
             "position": "Software Developer Intern",
             "start_month": "December",
             "start_year": "2020",
-            "end_month":"March",
+            "end_month": "March",
             "end_year": "2021",
             "descriptions": [
                 "Develop and maintain Intern Management System from Scratch",
@@ -150,35 +151,35 @@ function Resume() {
     const project_details = [
         {
             "id": 1,
-            "app_name":"E-Commerce",
+            "app_name": "E-Commerce",
             "techs": [
-                "ReactJS", "NodeJS", "ExpressJS", "MongoDB",  "HTML5", "CSS3", "Bootstrap"
+                "ReactJS", "NodeJS", "ExpressJS", "MongoDB", "HTML5", "CSS3", "Bootstrap"
             ]
         },
         {
             "id": 2,
-            "app_name":"Weather App",
+            "app_name": "Weather App",
             "techs": [
                 "NodeJS", "ExpressJS", "HTML5", "CSS3"
             ]
         },
         {
             "id": 3,
-            "app_name":"Book Publication",
+            "app_name": "Book Publication",
             "techs": [
                 "ReactJS", "HTML5", "CSS3", "Javascript", "Bootstrap"
             ]
         },
         {
             "id": 4,
-            "app_name":"Hotel Booking",
+            "app_name": "Hotel Booking",
             "techs": [
                 "ReactJS", "NodeJS", "ExpressJS", "MongoDB"
             ]
         },
         {
             "id": 5,
-            "app_name":"Appointment Booking",
+            "app_name": "Appointment Booking",
             "techs": [
                 "ReactJS", "Bootstrap"
             ]
@@ -220,17 +221,19 @@ function Resume() {
     const [work, setWork] = useState(false);
     const [projects, setProjects] = useState(false);
     const [programming, setProgramming] = useState(false);
+    const [volunteer, setVolunteer] = useState(false);
 
-    function setAllFalse(){
+    function setAllFalse() {
         setEducation(false);
         setWork(false);
         setProgramming(false);
         setProjects(false);
+        setVolunteer(false);
     }
 
-    function changeState(functionName, value){
+    function changeState(functionName, value) {
         setAllFalse();
-        functionName(value)
+        functionName(value);
     }
 
     return (
@@ -252,19 +255,24 @@ function Resume() {
                         <span className='icon-span'>
                             <i className="fas fa-tasks"></i>
                         </span>
+                        <span>
+                            <i class="fa fa-hand-paper-o"></i>
+                        </span>
                     </div>
                     <div className='d-flex flex-column bg-white'>
-                        <span className={education ? "resume-option-items selected" : "resume-option-items"} onClick={() => {changeState(setEducation, true)}}>Education</span>
-                        <span className={work ? "resume-option-items selected" : "resume-option-items"} onClick={() => {changeState(setWork, true)}}>Work</span>
-                        <span className={programming ? "resume-option-items selected" : "resume-option-items"} onClick={() => {changeState(setProgramming, true)}}>Programming</span>
-                        <span className={projects ? "resume-option-items selected" : "resume-option-items"} onClick={() => {changeState(setProjects, true)}}>Projects</span>
+                        <span className={education ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setEducation, true) }}>Education</span>
+                        <span className={work ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setWork, true) }}>Work</span>
+                        <span className={programming ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setProgramming, true) }}>Programming</span>
+                        <span className={projects ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setProjects, true) }}>Projects</span>
+                        <span className={volunteer ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setVolunteer, true) }}>Volunteer</span>
                     </div>
                 </div>
                 <div className='col-lg-8 col-md-8 col-sm-12 right bg-white'>
-                    {education && <Education education_details={education_details}/>}
-                    {work && <Work work_details={work_details}/>}
-                    {programming && <Programming programming_details={programming_details}/>}
-                    {projects && <Projects project_details={project_details}/>}
+                    {education && <Education education_details={education_details} />}
+                    {work && <Work work_details={work_details} />}
+                    {programming && <Programming programming_details={programming_details} />}
+                    {projects && <Projects project_details={project_details} />}
+                    {volunteer && <Volunteer volunteer_details={volunteer_details} />}
                 </div>
             </div>
         </div>
