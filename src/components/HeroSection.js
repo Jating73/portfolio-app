@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
-import heroImg from '../assets/hero-image.jpg';
+import heroImg from '../assets/hero-image.png';
 
 function HeroSection() {
 

@@ -263,7 +263,7 @@
     text-transform: uppercase;
 }
 
-.education-section .year-passed, .work-section .year-passed{
+.education-section .year-passed, .work-section .year-passed, .volunteer-section .year-passed{
     font-family: monospace;
     font-size: 1rem;
     background: var(--standout-color);
@@ -342,6 +342,31 @@
 }
 
 /* Project Ends */
+
+/* Volunteer Section Starts */
+
+.volunteer-section{
+    font-family: "Ubuntu";
+}
+
+.volunteer-section .company-name{
+    font-weight: 800;
+    color: red;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.volunteer-section .position{
+    color: #1c1c1c;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.volunteer-section .description{
+    color: #1c1c1c;
+}
+
+/* Volunteer Section Ends */
 
 /* Testimonials Starts */
 

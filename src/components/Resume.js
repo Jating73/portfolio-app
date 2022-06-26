@@ -195,7 +195,7 @@ function Resume() {
             "start_year": "2020",
             "end_month": "July",
             "end_year": "2020",
-            "description": [
+            "descriptions": [
                 "Creating Posters For NGO.",
                 "Help in Raising Funds for the NGO.",
                 "Creating Social Awareness Regarding Illiterate Women"
@@ -204,12 +204,12 @@ function Resume() {
         {
             "id": 2,
             "volunteering_job": "JOINT CORE",
-            "organisation": "CULFEST-CULTURAL FEST OF NIT JAMSHEDPUR",
+            "organisation": "CULFEST",
             "start_month": "August",
             "start_year": "2018",
             "end_month": "July",
             "end_year": "2019",
-            "description": [
+            "descriptions": [
                 "Responible for managing different Fests and Activities.",
                 "Team Management",
                 "Guiding Juniors to work properly"
@@ -255,8 +255,8 @@ function Resume() {
                         <span className='icon-span'>
                             <i className="fas fa-tasks"></i>
                         </span>
-                        <span>
-                            <i class="fa fa-hand-paper-o"></i>
+                        <span className='icon-span'>
+                        <i className="fas fa-fist-raised"></i>
                         </span>
                     </div>
                     <div className='d-flex flex-column bg-white'>
