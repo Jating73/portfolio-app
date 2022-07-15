@@ -1,35 +1,34 @@
 /* CSS Variable Colors */
-:root{
+:root {
     --primary-color: #02203c;
     --secondary-color: #001528;
-    --standout-color:#fff00b;
+    --standout-color: #fff00b;
 }
 
 /* Navbar Starts */
 
-.brand-name{
+.brand-name {
     font-family: "Oswald";
     font-size: 2rem;
     color: #fff;
 }
 
-.nav-items > a{
+.nav-items>a {
     text-decoration: none;
 }
 
-.nav-item{
+.nav-item {
     cursor: pointer;
-    color: #fff;
     font-size: 1.3rem;
     font-family: "Ubuntu";
     text-decoration: none;
 }
 
-.px-10{
+.px-10 {
     padding-inline: 90px;
 }
 
-.navbar-bg{
+.navbar-bg {
     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     color: #fff;
     padding-inline: 20px;
@@ -37,7 +36,7 @@
     justify-content: space-between;
 }
 
-.navbar-show .flex-new{
+.navbar-show .flex-new {
     flex-direction: row;
 }
 
@@ -45,45 +44,48 @@
 
 /* Hero Section Begins */
 
-.herosection{
+.herosection {
     background: linear-gradient(-90deg, var(--primary-color), var(--secondary-color));
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 78%);
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.herosection-body{
+.herosection-body {
     padding-top: 60px;
 }
 
-.herosection-body .text-section{
+.herosection-body .text-section {
     padding-top: 52px;
     text-align: center;
 }
 
-.herosection-body .main-text{
+.herosection-body .main-text {
     color: #fff;
     font-weight: 700;
     font-family: "Ubuntu";
     font-size: 1.4rem;
 }
 
-.herosection-body .name-text{
+.herosection-body .name-text {
     color: var(--standout-color);
     font-size: 28px;
 }
 
-.herosection-body .skill-text{
+.herosection-body .skill-text {
     color: #fff;
     font-size: 2.6rem;
     font-family: sans-serif;
 }
 
-.herosection-body .subheading-text{
+.herosection-body .subheading-text {
     font-family: "Open sans";
     color: #fff;
     font-size: 1.4rem;
 }
 
-.herosection-body .btn-hire{
+.herosection-body .btn-hire {
     font-size: 1.3rem;
     font-family: "Ubuntu";
     color: #fff;
@@ -96,13 +98,13 @@
     animation: Anim 1s ease-in-out infinite;
 }
 
-.herosection-body .btn-hire:hover{
+.herosection-body .btn-hire:hover {
     transform: translateY(-5px);
     background-color: var(--standout-color);
     color: #1c1c1c;
 }
 
-.herosection-body .btn-resume{
+.herosection-body .btn-resume {
     font-size: 1.3rem;
     font-family: "Ubuntu";
     color: #fff;
@@ -114,23 +116,25 @@
     transition: all 0.3s ease-in-out;
 }
 
-.herosection-body .btn-resume:hover{
+.herosection-body .btn-resume:hover {
     transform: translateY(-5px);
 }
 
 @keyframes Anim {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
-.hero-img{
+.hero-img {
     width: 300px;
     object-fit: contain;
     border-radius: 5%;
@@ -143,12 +147,15 @@
 
 /* About Section Begins */
 
-.about-me-section{
+.about-me-section {
     width: 70%;
-    margin-inline:auto;
+    margin-inline: auto;
 }
 
-.about-me-heading, .resume-heading, .testimonial-section > .heading, .contact-inner-part > .heading{
+.about-me-heading,
+.resume-heading,
+.testimonial-section>.heading,
+.contact-inner-part>.heading {
     font-family: "Ubuntu";
     font-weight: 800;
     font-size: 3.5rem;
@@ -156,7 +163,10 @@
     letter-spacing: 2px;
 }
 
-.about-me-sub-heading, .resume-sub-heading, .testimonial-section > .sub-heading, .contact-inner-part > .sub-heading{
+.about-me-sub-heading,
+.resume-sub-heading,
+.testimonial-section>.sub-heading,
+.contact-inner-part>.sub-heading {
     font-family: "Ubuntu";
     font-weight: 400;
     opacity: 0.8;
@@ -164,7 +174,7 @@
     text-transform: capitalize;
 }
 
-.about-me-text{
+.about-me-text {
     font-family: "Ubuntu";
     font-weight: 600;
     font-size: 1.2rem;
@@ -172,18 +182,18 @@
     text-align: justify;
 }
 
-.few-higlights{
+.few-higlights {
     font-family: "ubuntu";
     padding-block: 12px;
 }
 
-.hightlight-text{
+.hightlight-text {
     font-family: "Ubuntu";
     font-weight: 900;
     font-size: 1.5rem;
 }
 
-.highlight-list{
+.highlight-list {
     font-family: "Ubuntu";
     font-size: 1.2rem;
 }
@@ -192,30 +202,30 @@
 
 /* Resume Section Begins */
 
-.resume-section{
+.resume-section {
     padding: 100px 0px;
     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     color: #fff;
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
 }
 
-.resume-section .left{
+.resume-section .left {
     background: white;
 }
 
-.resume-section > .row{
+.resume-section>.row {
     width: 70%;
     margin-inline: auto;
     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     box-shadow: 10px 10px 32px 2px #1c1c1c;
 }
 
-.resume-section .bg-new{
+.resume-section .bg-new {
     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     color: #fff;
 }
 
-.resume-option-items{
+.resume-option-items {
     width: 1%;
     transition: all 0.3s ease-in-out;
     padding-block: 24px;
@@ -226,18 +236,18 @@
     border-bottom-right-radius: 20px;
 }
 
-.resume-option-items:hover{
+.resume-option-items:hover {
     width: 100%;
     background: linear-gradient(-90deg, var(--primary-color), var(--secondary-color));
     color: #fff;
 }
 
-.icon-span{
+.icon-span {
     margin-block: 24px;
     margin-inline: 24px;
 }
 
-.selected{
+.selected {
     background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
     width: 100%;
     color: #fff;
@@ -246,24 +256,26 @@
 /* Resume Section Ends */
 
 /* Education Section Begins*/
-.education-section{
+.education-section {
     font-family: "Ubuntu";
 }
 
-.education-section .degree{
+.education-section .degree {
     color: #1c1c1c;
     font-weight: 800;
     font-size: 1rem;
 }
 
-.education-section .university{
+.education-section .university {
     font-weight: 800;
     color: red;
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-.education-section .year-passed, .work-section .year-passed, .volunteer-section .year-passed{
+.education-section .year-passed,
+.work-section .year-passed,
+.volunteer-section .year-passed {
     font-family: monospace;
     font-size: 1rem;
     background: var(--standout-color);
@@ -276,44 +288,44 @@
 
 /* Work Section Starts */
 
-.work-section{
+.work-section {
     font-family: "Ubuntu";
 }
 
-.work-section .company-name{
+.work-section .company-name {
     font-weight: 800;
     color: red;
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-.work-section .position{
+.work-section .position {
     color: #1c1c1c;
     font-weight: 800;
     font-size: 1rem;
 }
 
-.work-section .description{
+.work-section .description {
     color: #1c1c1c;
 }
 
 /* Work Section Ends */
 
 /* Programming Starts */
-.programming-section .language{
+.programming-section .language {
     font-family: "Ubuntu";
     font-size: 1.5rem;
     text-transform: capitalize;
     color: #1c1c1c;
 }
 
-.programming-section .progress-bar{
+.programming-section .progress-bar {
     background: red;
     height: 20px;
     width: 200px;
 }
 
-.programming-section .progress-made{
+.programming-section .progress-made {
     background: #1c1c1c;
     height: 20px;
 }
@@ -322,22 +334,22 @@
 
 /* Project Starts */
 
-.project-section{
+.project-section {
     font-family: "Ubuntu";
 }
 
-.project-section .project-name{
+.project-section .project-name {
     font-size: 1.5rem;
     font-weight: 800;
     color: red;
     text-transform: uppercase;
 }
 
-.project-section .fa-circle{
+.project-section .fa-circle {
     font-size: 0.7rem;
 }
 
-.project-section .project-tech{
+.project-section .project-tech {
     color: #1c1c1c;
 }
 
@@ -345,24 +357,24 @@
 
 /* Volunteer Section Starts */
 
-.volunteer-section{
+.volunteer-section {
     font-family: "Ubuntu";
 }
 
-.volunteer-section .company-name{
+.volunteer-section .company-name {
     font-weight: 800;
     color: red;
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-.volunteer-section .position{
+.volunteer-section .position {
     color: #1c1c1c;
     font-weight: 800;
     font-size: 1rem;
 }
 
-.volunteer-section .description{
+.volunteer-section .description {
     color: #1c1c1c;
 }
 
@@ -370,14 +382,14 @@
 
 /* Testimonials Starts */
 
-.testimonial-section .testimonial-card{
+.testimonial-section .testimonial-card {
     border-radius: 50px 20px 50px 0px;
     padding: 24px;
     width: 98%;
     text-align: justify;
 }
 
-.testimonial-section .description{
+.testimonial-section .description {
     font-family: "Ubuntu";
     font-weight: 700;
 }
@@ -386,15 +398,15 @@
 
 /* Contact Starts */
 
-.contact-section{
+.contact-section {
     color: #fff;
 }
 
-.contact-inner-part{
+.contact-inner-part {
     padding-top: 100px;
 }
 
-.contact-inner-part > .row {
+.contact-inner-part>.row {
     background: #1c1c1c;
     width: 80%;
     margin-inline: auto;
@@ -402,14 +414,14 @@
     height: 500px;
 }
 
-.get-in-touch{
+.get-in-touch {
     font-family: "Ubuntu";
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
 }
 
-.contact-section .relative-bg{
+.contact-section .relative-bg {
     position: absolute;
     clip-path: polygon(0 5%, 100% 14%, 100% 80%, 0% 96%);
     background: linear-gradient(-90deg, var(--primary-color), var(--secondary-color));
@@ -418,13 +430,13 @@
     z-index: -4;
 }
 
-.contact-inner-part .input-group{
+.contact-inner-part .input-group {
     border: none;
     border-radius: 10px;
     padding: 10px 10px;
 }
 
-.contact-inner-part .right{
+.contact-inner-part .right {
     border-radius: 20px;
     width: 90%;
     margin-inline: auto;
@@ -436,8 +448,8 @@
 /* Contact Ends */
 
 /* Responsiveness Starts */
-@media all and (max-width: 786px) { 
-    .hamburger-menu{
+@media all and (max-width: 786px) {
+    .hamburger-menu {
         height: 4px;
         width: 40px;
         background: #fff;
@@ -445,7 +457,8 @@
         z-index: 33;
         transform: translateX(55px) translateY(20px);
     }
-    .hamburger-menu::before{
+
+    .hamburger-menu::before {
         display: block;
         position: relative;
         top: 9px;
@@ -456,7 +469,8 @@
         float: right;
         z-index: 33;
     }
-    .hamburger-menu::after{
+
+    .hamburger-menu::after {
         display: block;
         position: relative;
         bottom: 12px;
@@ -467,35 +481,74 @@
         float: right;
         z-index: 33;
     }
-    .navbar-show{
-        position: fixed;
-        height: 100vh;
-        width: 60vw;
-        flex-direction: column;
-        justify-content: start !important;
-        z-index: 33;
-    }
-    .navbar-hidden{
-        position: fixed;
-        height: 100vh;
-        width: 60vw;
-        flex-direction: column;
-        justify-content: start !important;
-        z-index: 33;
-        transform: translateX(-700px);
-    }
-    .brand-name{
+
+    .brand-name {
         font-size: 1.4rem;
         padding-inline: 22px;
     }
-    .navbar-show .flex-new{
-        flex-direction: column;
-    }
-    .navbar-show .flex-new .nav-item{
+
+    .navbar-show .flex-new .nav-item {
         padding-block: 20px;
     }
-    .transition-all{
+
+    .transition-all {
         transition: all 0.3s ease-in-out;
     }
-    
+
+    .herosection-body .main-text {
+        font-size: 1.2rem;
+    }
+
+    .herosection-body .name-text {
+        font-size: 20px;
+    }
+
+    .herosection-body .skill-text {
+        font-size: 2.0rem;
+    }
+
+    .herosection-body .subheading-text {
+        font-size: 1.2rem;
+    }
+
+    .herosection-body .btn-resume {
+        font-size: 1rem;
+        padding: 5px 8px;
+    }
+
+    .herosection-body .btn-hire {
+        font-size: 1rem;
+        padding: 5px 8px;
+    }
+
+    .about-me-section {
+        width: 90%;
+    }
+
+    .resume-section>.row {
+        width: 90%;
+    }
+
+    .education-section .university,
+    .work-section .company-name,
+    .project-section .project-name,
+    .volunteer-section .company-name {
+        font-size: 1rem;
+    }
+
+    .education-section .degree,
+    .work-section .position,
+    .project-section .project-tech,
+    .volunteer-section .position {
+        font-size: 0.9rem;
+    }
+
+    .contact-inner-part>.row {
+        width: 95%;
+    }
+
+    .contact-inner-part .right {
+        width: 100%;
+        box-shadow: 3px 5px 20px 4px rgb(243 243 240);
+    }
 }

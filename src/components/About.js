@@ -12,7 +12,7 @@ function About() {
               src="https://assets8.lottiefiles.com/packages/lf20_vhs8qxx2.json"
               background="transparent"
               speed="1"
-              style={{ width: "500px", height: "300px" }}
+              style={{ width: "500px"}}
               loop
               autoplay></lottie-player>
           </div>
