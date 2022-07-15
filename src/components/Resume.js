@@ -44,12 +44,13 @@ function Resume() {
                 "Develop and maintain Backend for apps and web panels",
                 "Setting up applications and deploying them on the cloud (AWS).",
                 "Writing and optimizing APIs and Database Queries.",
+                "Reduced the manual work by automating clearing of data from elastic search.",
                 "Debugging production issues.",
                 "Solely responsible for the delivery platform(Fatafat and Menus).",
                 "Created OPEN APIs and documentation with multiple levels of security.",
                 "Integrating various third-party solutions like payment gateways, customer KYC, marketing modules, etc.",
                 "Mentoring juniors, actively performing code reviews and discussions.",
-                "Actively participating in providing solutions for new features with managers and clients."
+                "Actively participating in providing solutions for new development with managers and clients."
             ]
         },
         {
@@ -62,13 +63,10 @@ function Resume() {
             "end_year": "2021",
             "descriptions": [
                 "Develop and maintain Backend for apps and web panels",
-                "Setting up applications and deploying them on the cloud (AWS).",
                 "Writing and optimizing APIs and Database Queries.",
-                "Debugging production issues.",
-                "Solely responsible for the delivery platform(Fatafat and Menus).",
-                "Created OPEN APIs and documentation with multiple levels of security.",
-                "Integrating various third-party solutions like payment gateways, customer KYC, marketing modules, etc.",
-                "Mentoring juniors, actively performing code reviews and discussions.",
+                "Debugging production issues on staging",
+                "Integrating various third-party solutions like payment gateways, sms gatewags, marketing modules, etc.",
+                "Actively performing code reviews and discussions.",
                 "Actively participating in providing solutions for new features with managers and clients."
             ]
         },
@@ -82,9 +80,10 @@ function Resume() {
             "end_year": "2021",
             "descriptions": [
                 "Develop and maintain Intern Management System from Scratch",
-                "Making optimal Database Model using MySQL",
+                "Reduced manual effort by 70% of storing and managing data using google form and excel sheet.",
+                "Making optimal Database Model using MySQL for Intern Management System",
                 "Writing Complex Database Queries.",
-                "Debugging issues.",
+                "Debugging issues on existing website",
                 "Taking Interviews, Mentoring juniors, actively performing code reviews and discussions.",
             ]
         },
@@ -256,7 +255,7 @@ function Resume() {
                             <i className="fas fa-tasks"></i>
                         </span>
                         <span className='icon-span'>
-                        <i className="fas fa-fist-raised"></i>
+                            <i className="fas fa-fist-raised"></i>
                         </span>
                     </div>
                     <div className='d-flex flex-column bg-white'>
