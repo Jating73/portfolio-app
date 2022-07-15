@@ -40,7 +40,7 @@ function HeroSection() {
             <span className='subheading-text'>Knack of Building Applications with Front and Backend Operations</span>
             <div className='d-flex flex-row justify-content-center mt-5'>
               <a className='btn btn-hire' href='#contact'>Hire Me</a>
-              <a className='btn btn-resume' target="_blank" href='https://res.cloudinary.com/instac/image/upload/v1654607850/resume/Jatin-Gambhir-Resume_h9jcfw.pdf'>Get Resume</a>
+              <a className='btn btn-resume' target="_blank" href='https://res.cloudinary.com/instac/image/upload/v1657856215/resume/Jatin-Gambhir-Resume_h9jcfw.pdf'>Get Resume</a>
             </div>
           </div>
         </div>
