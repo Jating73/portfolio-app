@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Education from './resume/Education';
 import Programming from './resume/Programming';
 import Projects from './resume/Projects';
 import Work from './resume/Work';
 import Volunteer from './resume/Volunteer';
+import { BACKEND } from '../utils/constants';
 
 function Resume() {
 
@@ -222,6 +223,8 @@ function Resume() {
     const [programming, setProgramming] = useState(false);
     const [volunteer, setVolunteer] = useState(false);
 
+    const [hostedProjects, setHostedProjects] = useState([]);
+
     function setAllFalse() {
         setEducation(false);
         setWork(false);
@@ -234,6 +237,15 @@ function Resume() {
         setAllFalse();
         functionName(value);
     }
+
+    useEffect(() => {
+
+        const url = BACKEND.BASE_URL + BACKEND.API_V1 + BACKEND.PROJECT_ENDPOINT.PROJECT + BACKEND.PROJECT_ENDPOINT.HOSTED_PROJECTS;
+
+        fetch(url)
+            .then((response) => { return response.json() })
+            .then(response => setHostedProjects(response.data));
+    }, []);
 
     return (
         <div className='resume-section d-flex flex-column' id='resume'>
@@ -266,11 +278,11 @@ function Resume() {
                         <span className={volunteer ? "resume-option-items selected" : "resume-option-items"} onClick={() => { changeState(setVolunteer, true) }}>Volunteer</span>
                     </div>
                 </div>
-                <div className='col-lg-8 col-md-8 col-sm-12 right bg-white'>
+                <div className='col-lg-8 col-md-8 col-sm-12 right bg-white py-2'>
                     {education && <Education education_details={education_details} />}
                     {work && <Work work_details={work_details} />}
                     {programming && <Programming programming_details={programming_details} />}
-                    {projects && <Projects project_details={project_details} />}
+                    {projects && <Projects project_details={project_details} hosted_projects={hostedProjects} />}
                     {volunteer && <Volunteer volunteer_details={volunteer_details} />}
                 </div>
             </div>
